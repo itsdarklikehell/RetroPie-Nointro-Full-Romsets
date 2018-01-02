@@ -15,7 +15,8 @@ DLSET(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Downloading $SETLINK to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-wget $SETLINK -o $DLDIR/$SETNAME
+#cd $DLDIR/$SETNAME
+wget $SETLINK -P $DLDIR/$SETNAME
 }
 }
 CONFIGURE
