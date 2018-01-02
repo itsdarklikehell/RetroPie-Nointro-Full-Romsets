@@ -2,80 +2,139 @@
 ################ config ################ 
 CONFIGURE(){
 DLDIR="~/Downloads/No-Intro"
-echo "this script wil download any selected No-Intro romset to $DLDIR"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "This script wil download any selected No-Intro romset to $DLDIR"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS(){
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Making directory $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 mkdir -p $DLDIR/$SETNAME
+}
+DLSET(){
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Downloading $SETLINK to $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+wget -o $SETLINK $DLDIR/$SETNAME
 }
 }
 CONFIGURE
 ################ config end ################
 C64(){
 SETNAME="c64"
-echo "Commodore 64 (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Commodore 64 (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Commodore%20-%2064.rar"
+DLSET
 }
 GAMEBOY(){
 SETNAME="gameboy"
-echo "Gameboy (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Gameboy (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy.rar"
+DLSET
 }
 GAMEBOYADVANCED(){
 SETNAME="gba"
-echo "Gameboy Advance (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Gameboy Advance (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="http://uberupload.net/450225c72e02ed98f4d29152daa03f90"
+DLSET
 }
 GAMEBOYCOLOR(){
 SETNAME="gbc"
-echo "Gameboy Color (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Gameboy Color (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy%20Color.rar"
+DLSET
 }
 NINTENDO(){
 SETNAME="nes"
-echo "Nintendo (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Nintendo (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Nintendo%20Entertainment%20System.rar"
+DLSET
 }
 NINTENDO64(){
 SETNAME="n64"
-echo "Nintendo 64 (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Nintendo 64 (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="http://uberupload.net/6fc39d5e1daea975e1b2dfd7bc3c060d"
+DLSET
 }
 SEGA32(){
 SETNAME="sega32x"
-echo "Sega 32X (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Sega 32X (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%2032X.rar"
+DLSET
 }
 SEGAGAMEGEAR(){
 SETNAME="gamegear"
-echo "Sega Game Gear (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Sega Game Gear (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Game%20Gear.rar"
+DLSET
 }
 SEGAGENESIS(){
 SETNAME="genesis"
-echo "Sega Genesis (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Sega Genesis (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Mega%20Drive%20-%20Genesis.rar"
+DLSET
 }
 SEGAMASTERSYSTEM(){
 SETNAME="mastersystem"
-echo "Sega Master System (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Sega Master System (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Master%20System%20-%20Mark%20III.rar"
+DLSET
 }
 SUPERNINTENDO(){
 SETNAME="snes"
-echo "Super Nintendo (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Super Nintendo (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System.rar"
+DLSET
 }
 WONDERSWAN(){
 SETNAME="wonderswan"
-echo "WonderSwan And Color (All Regions)"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "WonderSwan And Color (All Regions) $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
+SETLINK="https://download.loveroms.com/roms/sets/Bandai%20-%20WonderSwan%20and%20Color.rar"
+DLSET
 }
 ################ execution ################
 C64
 GAMEBOY
-GAMEBOYADVANCED
+#GAMEBOYADVANCED
 GAMEBOYCOLOR
 NINTENDO
-NINTENDO64
+#NINTENDO64
 SEGA32
 SEGAGAMEGEAR
 SEGAGENESIS
