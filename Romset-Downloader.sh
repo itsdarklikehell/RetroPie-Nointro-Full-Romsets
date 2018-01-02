@@ -15,7 +15,6 @@ DLSET(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Downloading $SETLINK to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-#cd $DLDIR/$SETNAME
 wget $SETLINK -P $DLDIR/$SETNAME
 }
 }
@@ -45,7 +44,7 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Gameboy Advance (All Regions) $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
-SETLINK="http://uberupload.net/450225c72e02ed98f4d29152daa03f90"
+SETLINK=""
 DLSET
 }
 GAMEBOYCOLOR(){
@@ -72,7 +71,7 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Nintendo 64 (All Regions) $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
-SETLINK="http://uberupload.net/6fc39d5e1daea975e1b2dfd7bc3c060d"
+SETLINK=""
 DLSET
 }
 SEGA32(){
@@ -131,14 +130,14 @@ DLSET
 }
 ################ execution ################
 C64
-#GAMEBOY
-##GAMEBOYADVANCED
-#GAMEBOYCOLOR
-#NINTENDO
-##NINTENDO64
-#SEGA32
-#SEGAGAMEGEAR
-#SEGAGENESIS
-#SEGAMASTERSYSTEM
-#SUPERNINTENDO
-#WONDERSWAN
+GAMEBOY
+GAMEBOYADVANCED
+GAMEBOYCOLOR
+NINTENDO
+NINTENDO64
+SEGA32
+SEGAGAMEGEAR
+SEGAGENESIS
+SEGAMASTERSYSTEM
+SUPERNINTENDO
+WONDERSWAN
