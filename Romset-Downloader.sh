@@ -5,7 +5,6 @@ DLDIR="~/Downloads/No-Intro"
 echo "this script wil download any selected No-Intro romset to $DLDIR"
 MAKEDIRS(){
 mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
 }
 }
 CONFIGURE
@@ -18,68 +17,57 @@ MAKEDIRS
 GAMEBOY(){
 SETNAME="gameboy"
 echo "Gameboy (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 GAMEBOYADVANCED(){
 SETNAME="gba"
 echo "Gameboy Advance (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 GAMEBOYCOLOR(){
 SETNAME="gbc"
 echo "Gameboy Color (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 NINTENDO(){
 SETNAME="nes"
 echo "Nintendo (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 NINTENDO64(){
 SETNAME="n64"
 echo "Nintendo 64 (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 SEGA32(){
 SETNAME="sega32x"
 echo "Sega 32X (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 SEGAGAMEGEAR(){
 SETNAME="gamegear"
 echo "Sega Game Gear (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 SEGAGENESIS(){
 SETNAME="genesis"
 echo "Sega Genesis (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 SEGAMASTERSYSTEM(){
 SETNAME="mastersystem"
 echo "Sega Master System (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 SUPERNINTENDO(){
 SETNAME="snes"
 echo "Super Nintendo (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 WONDERSWAN(){
 SETNAME="wonderswan"
 echo "WonderSwan And Color (All Regions)"
-mkdir -p $DLDIR/$SETNAME
-cd $DLDIR/$SETNAME
+MAKEDIRS
 }
 ################ execution ################
 C64
