@@ -15,7 +15,14 @@ DLSET(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Downloading $SETLINK to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-wget $SETLINK -P $DLDIR/$SETNAME
+wget $SETLINK -O $DLDIR/$SETNAME/$SETNAME.rar
+}
+EXTRACT(){
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "Extracting $SETNAME to $DLDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+#unrar command [-switch_1 -switch_N] archive [files...] [path...]
+unrar $DLDIR/$SETNAME/ $DLDIR/$SETNAME/
 }
 }
 CONFIGURE
