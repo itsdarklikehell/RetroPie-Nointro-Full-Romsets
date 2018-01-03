@@ -56,6 +56,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Game\ Boy/*.* $ROMSDIR/$SETNAME
 }
 GAMEBOYADVANCED(){
 SETNAME="gba"
@@ -66,6 +67,7 @@ MAKEDIRS
 SETLINK=""
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Game\ Boy\ Advanced/*.* $ROMSDIR/$SETNAME
 }
 GAMEBOYCOLOR(){
 SETNAME="gbc"
@@ -76,6 +78,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy%20Color.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Game\ Boy\ Color/*.* $ROMSDIR/$SETNAME
 }
 NINTENDO(){
 SETNAME="nes"
@@ -86,6 +89,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Nintendo%20Entertainment%20System.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Nintendo\ Entertainment\ Systen/*.* $ROMSDIR/$SETNAME
 }
 NINTENDO64(){
 SETNAME="n64"
@@ -96,6 +100,7 @@ MAKEDIRS
 SETLINK=""
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Nintendo\ 64/*.* $ROMSDIR/$SETNAME
 }
 SEGA32(){
 SETNAME="sega32x"
@@ -106,6 +111,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%2032X.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Sega\ -\ 23X/*.* $ROMSDIR/$SETNAME
 }
 SEGAGAMEGEAR(){
 SETNAME="gamegear"
@@ -116,6 +122,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Game%20Gear.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Sega -\ Game\ Gear/*.* $ROMSDIR/$SETNAME
 }
 SEGAGENESIS(){
 SETNAME="genesis"
@@ -126,6 +133,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Mega%20Drive%20-%20Genesis.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Sega\ -\ Mega\ Drive\ -\ Genesis/*.* $ROMSDIR/$SETNAME
 }
 SEGAMASTERSYSTEM(){
 SETNAME="mastersystem"
@@ -136,6 +144,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Master%20System%20-%20Mark%20III.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Sega\ -\ Master\ System\ -\ Mark\ III/*.* $ROMSDIR/$SETNAME
 }
 SUPERNINTENDO(){
 SETNAME="snes"
@@ -146,6 +155,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Super\ Nintendo\ Entertainment\ System/*.* $ROMSDIR/$SETNAME
 }
 WONDERSWAN(){
 SETNAME="wonderswan"
@@ -156,17 +166,18 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Bandai%20-%20WonderSwan%20and%20Color.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Bandai\ -\ WonderSwan\ and\ Color/*.* $ROMSDIR/$SETNAME
 }
 ################ execution ################
 C64
-#GAMEBOY
+GAMEBOY
 #GAMEBOYADVANCED
-#GAMEBOYCOLOR
-#NINTENDO
+GAMEBOYCOLOR
+NINTENDO
 #NINTENDO64
-#SEGA32
-#SEGAGAMEGEAR
-#SEGAGENESIS
-#SEGAMASTERSYSTEM
-#SUPERNINTENDO
-#WONDERSWAN
+SEGA32
+SEGAGAMEGEAR
+SEGAGENESIS
+SEGAMASTERSYSTEM
+SUPERNINTENDO
+WONDERSWAN
