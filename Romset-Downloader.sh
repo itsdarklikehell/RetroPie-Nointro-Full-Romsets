@@ -1,37 +1,36 @@
 #!/bin/bash
 ################ config ################ 
 CONFIGURE(){
-DLDIR=~/Downloads/No-Intro
 ROMSDIR=~/RetroPie/roms
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "This script wil download any selected No-Intro romset to $DLDIR"
+echo "This script wil download any selected No-Intro romset to $ROMSDIR/*systemname*/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Making directory $DLDIR/$SETNAME"
+echo "Making directory $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-mkdir -p $DLDIR/$SETNAME
+mkdir -p $ROMSDIR/$SETNAME/No-Intro
 }
 DLSET(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Downloading $SETLINK to $DLDIR/$SETNAME/$SETNAME.rar"
+echo "Downloading $SETLINK to $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-wget $SETLINK -O $DLDIR/$SETNAME/$SETNAME.rar
+wget $SETLINK -O $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
 }
 EXTRACT(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Extracting $SETNAME.rar to $DLDIR/$SETNAME"
+echo "Extracting $SETNAME.rar to $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
-cd $DLDIR/$SETNAME
-unrar x $DLDIR/$SETNAME/$SETNAME.rar $ROMSDIR/$SETNAME
+cd $ROMSDIR/$SETNAME
+unrar x $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar $ROMSDIR/$SETNAME/No-Intro
 CLEANUP
 }
 CLEANUP(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Removing $SETNAME.rar from $DLDIR/$SETNAME"
+echo "Removing $SETNAME.rar from $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-rm $DLDIR/$SETNAME/$SETNAME.rar
+rm $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
 }
 }
 CONFIGURE
@@ -39,7 +38,7 @@ CONFIGURE
 C64(){
 SETNAME="c64"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Commodore 64 (All Regions) $DLDIR/$SETNAME"
+echo "Commodore 64 (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Commodore%20-%2064.rar"
@@ -49,7 +48,7 @@ EXTRACT
 GAMEBOY(){
 SETNAME="gameboy"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Gameboy (All Regions) $DLDIR/$SETNAME"
+echo "Gameboy (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy.rar"
@@ -59,7 +58,7 @@ EXTRACT
 GAMEBOYADVANCED(){
 SETNAME="gba"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Gameboy Advance (All Regions) $DLDIR/$SETNAME"
+echo "Gameboy Advance (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK=""
@@ -69,7 +68,7 @@ EXTRACT
 GAMEBOYCOLOR(){
 SETNAME="gbc"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Gameboy Color (All Regions) $DLDIR/$SETNAME"
+echo "Gameboy Color (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy%20Color.rar"
@@ -79,7 +78,7 @@ EXTRACT
 NINTENDO(){
 SETNAME="nes"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Nintendo (All Regions) $DLDIR/$SETNAME"
+echo "Nintendo (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Nintendo%20Entertainment%20System.rar"
@@ -89,7 +88,7 @@ EXTRACT
 NINTENDO64(){
 SETNAME="n64"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Nintendo 64 (All Regions) $DLDIR/$SETNAME"
+echo "Nintendo 64 (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK=""
@@ -99,7 +98,7 @@ EXTRACT
 SEGA32(){
 SETNAME="sega32x"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Sega 32X (All Regions) $DLDIR/$SETNAME"
+echo "Sega 32X (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%2032X.rar"
@@ -109,7 +108,7 @@ EXTRACT
 SEGAGAMEGEAR(){
 SETNAME="gamegear"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Sega Game Gear (All Regions) $DLDIR/$SETNAME"
+echo "Sega Game Gear (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Game%20Gear.rar"
@@ -119,7 +118,7 @@ EXTRACT
 SEGAGENESIS(){
 SETNAME="genesis"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Sega Genesis (All Regions) $DLDIR/$SETNAME"
+echo "Sega Genesis (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Mega%20Drive%20-%20Genesis.rar"
@@ -129,7 +128,7 @@ EXTRACT
 SEGAMASTERSYSTEM(){
 SETNAME="mastersystem"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Sega Master System (All Regions) $DLDIR/$SETNAME"
+echo "Sega Master System (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Sega%20-%20Master%20System%20-%20Mark%20III.rar"
@@ -139,7 +138,7 @@ EXTRACT
 SUPERNINTENDO(){
 SETNAME="snes"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Super Nintendo (All Regions) $DLDIR/$SETNAME"
+echo "Super Nintendo (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Super%20Nintendo%20Entertainment%20System.rar"
@@ -149,7 +148,7 @@ EXTRACT
 WONDERSWAN(){
 SETNAME="wonderswan"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "WonderSwan And Color (All Regions) $DLDIR/$SETNAME"
+echo "WonderSwan And Color (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Bandai%20-%20WonderSwan%20and%20Color.rar"
