@@ -13,13 +13,13 @@ mkdir -p $DLDIR/$SETNAME
 }
 DLSET(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Downloading $SETLINK to $DLDIR/$SETNAME"
+echo "Downloading $SETLINK to $DLDIR/$SETNAME/$SETNAME.rar"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 wget $SETLINK -O $DLDIR/$SETNAME/$SETNAME.rar
 }
 EXTRACT(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-echo "Extracting $SETNAME to $DLDIR/$SETNAME"
+echo "Extracting $SETNAME.rar to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
 unrar $DLDIR/$SETNAME/$SETNAME.rar $DLDIR/$SETNAME/
