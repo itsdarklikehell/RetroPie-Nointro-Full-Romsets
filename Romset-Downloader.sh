@@ -23,8 +23,9 @@ echo "Extracting $SETNAME.rar to $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
 cd $ROMSDIR/$SETNAME
-unrar x $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar $ROMSDIR/$SETNAME/No-Intro
+unrar x -y $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar $ROMSDIR/$SETNAME/No-Intro
 CLEANUP
+}
 }
 CLEANUP(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
@@ -44,6 +45,7 @@ MAKEDIRS
 SETLINK="https://download.loveroms.com/roms/sets/Commodore%20-%2064.rar"
 DLSET
 EXTRACT
+mv $ROMSDIR/$SETNAME/No-Intro/Commodore\ -\ 64/*.* $ROMSDIR/$SETNAME
 }
 GAMEBOY(){
 SETNAME="gameboy"
@@ -157,14 +159,14 @@ EXTRACT
 }
 ################ execution ################
 C64
-GAMEBOY
+#GAMEBOY
 #GAMEBOYADVANCED
-GAMEBOYCOLOR
-NINTENDO
+#GAMEBOYCOLOR
+#NINTENDO
 #NINTENDO64
-SEGA32
-SEGAGAMEGEAR
-SEGAGENESIS
-SEGAMASTERSYSTEM
-SUPERNINTENDO
-WONDERSWAN
+#SEGA32
+#SEGAGAMEGEAR
+#SEGAGENESIS
+#SEGAMASTERSYSTEM
+#SUPERNINTENDO
+#WONDERSWAN
