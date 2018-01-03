@@ -2,6 +2,7 @@
 ################ config ################ 
 CONFIGURE(){
 DLDIR=~/Downloads/No-Intro
+ROMSDIR=~/RetroPie/roms
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "This script wil download any selected No-Intro romset to $DLDIR"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
@@ -23,7 +24,7 @@ echo "Extracting $SETNAME.rar to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
 cd $DLDIR/$SETNAME
-unrar x $DLDIR/$SETNAME/$SETNAME.rar
+unrar x $DLDIR/$SETNAME/$SETNAME.rar $ROMSDIR/$SETNAME
 CLEANUP
 }
 CLEANUP(){
