@@ -33,7 +33,6 @@ echo "Removing $SETNAME.rar from $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 rm $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
 }
-}
 CONFIGURE
 ################ config end ################
 C64(){
