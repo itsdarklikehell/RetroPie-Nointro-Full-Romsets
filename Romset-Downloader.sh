@@ -23,7 +23,7 @@ echo "Extracting $SETNAME.rar to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
 cd $DLDIR/$SETNAME
-unrar $DLDIR/$SETNAME/$SETNAME.rar
+unrar x $DLDIR/$SETNAME/$SETNAME.rar
 CLEANUP
 }
 CLEANUP(){
