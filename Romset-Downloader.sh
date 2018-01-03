@@ -22,7 +22,8 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Extracting $SETNAME.rar to $DLDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
-unrar $DLDIR/$SETNAME/$SETNAME.rar $DLDIR/$SETNAME/
+cd $DLDIR/$SETNAME
+unrar $DLDIR/$SETNAME/$SETNAME.rar
 CLEANUP
 }
 CLEANUP(){
@@ -156,14 +157,14 @@ EXTRACT
 }
 ################ execution ################
 C64
-GAMEBOY
+#GAMEBOY
 #GAMEBOYADVANCED
-GAMEBOYCOLOR
-NINTENDO
+#GAMEBOYCOLOR
+#NINTENDO
 #NINTENDO64
-SEGA32
-SEGAGAMEGEAR
-SEGAGENESIS
-SEGAMASTERSYSTEM
-SUPERNINTENDO
-WONDERSWAN
+#SEGA32
+#SEGAGAMEGEAR
+#SEGAGENESIS
+#SEGAMASTERSYSTEM
+#SUPERNINTENDO
+#WONDERSWAN
