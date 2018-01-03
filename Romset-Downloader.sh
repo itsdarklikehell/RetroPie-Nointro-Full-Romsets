@@ -1,7 +1,7 @@
 #!/bin/bash
 ################ config ################ 
 CONFIGURE(){
-DLDIR="~/Downloads/No-Intro"
+DLDIR=~/Downloads/No-Intro
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "This script wil download any selected No-Intro romset to $DLDIR"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
