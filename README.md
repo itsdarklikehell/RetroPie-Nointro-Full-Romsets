@@ -1,5 +1,6 @@
 # RetroPie-Nointro-Full-Romsets
 Download and extract No-Intro full romsets from loveroms (or other sites) to proper directories on RetroPie.
+
 Note: This is a work in progress!
 	  Also, this is a verry lage list of roms, you might not have enough space on your sd card
 
