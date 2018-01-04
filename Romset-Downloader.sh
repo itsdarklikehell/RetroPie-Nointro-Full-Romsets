@@ -25,6 +25,9 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 cd $ROMSDIR/$SETNAME
 unrar x -y $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar $ROMSDIR/$SETNAME/No-Intro
 unzip $ROMSDIR/$SETNAME/No-Intro/*.zip -d $ROMSDIR/$SETNAME/No-Intro
+
+
+unzip $ROMSDIR/$SETNAME/*.zip -d $ROMSDIR/$SETNAME
 CLEANUP
 }
 }
