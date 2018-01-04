@@ -24,6 +24,7 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #unrar command [-switch_1 -switch_N] archive [files...] [path...]
 cd $ROMSDIR/$SETNAME
 unrar x -y $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar $ROMSDIR/$SETNAME/No-Intro
+unzip $ROMSDIR/$SETNAME/No-Intro/*.zip -d $ROMSDIR/$SETNAME/No-Intro
 CLEANUP
 }
 }
