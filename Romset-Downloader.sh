@@ -36,6 +36,11 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Removing $SETNAME.rar from $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 #rm $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+echo "removing remaining *.zip files from $ROMSDIR/$SETNAME"
+echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
+#rm $ROMSDIR/$SETNAME*.zip
+
 }
 CONFIGURE
 ################ config end ################
