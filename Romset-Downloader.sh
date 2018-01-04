@@ -15,7 +15,7 @@ DLSET(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Downloading $SETLINK to $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-wget $SETLINK -O $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
+wget -c $SETLINK -O $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
 }
 EXTRACT(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
@@ -32,7 +32,7 @@ CLEANUP(){
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Removing $SETNAME.rar from $ROMSDIR/$SETNAME/No-Intro"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
-rm $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
+#rm $ROMSDIR/$SETNAME/No-Intro/$SETNAME.rar
 }
 CONFIGURE
 ################ config end ################
