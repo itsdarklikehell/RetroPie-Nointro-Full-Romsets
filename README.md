@@ -28,3 +28,11 @@ Sega Master System (All Regions)
 Super Nintendo (All Regions)
 
 WonderSwan And Color (All Regions)
+
+---
+
+## 🎥 Gource Visualization
+
+De ontwikkelhistorie van dit project in een film:
+
+<video src="https://raw.githubusercontent.com/itsdarklikehell/RetroPie-Nointro-Full-Romsets/master/gource.mp4" controls width="100%"></video>
