@@ -72,7 +72,7 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Gameboy Advance (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
-SETLINK=""
+SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Game%20Boy%20Advance.rar"
 DLSET
 EXTRACT
 mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Game\ Boy\ Advanced/*.* $ROMSDIR/$SETNAME
@@ -105,7 +105,7 @@ echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 echo "Nintendo 64 (All Regions) $ROMSDIR/$SETNAME"
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
 MAKEDIRS
-SETLINK=""
+SETLINK="https://download.loveroms.com/roms/sets/Nintendo%20-%20Nintendo%2064.rar"
 DLSET
 EXTRACT
 mv $ROMSDIR/$SETNAME/No-Intro/Nintendo\ -\ Nintendo\ 64/*.* $ROMSDIR/$SETNAME
