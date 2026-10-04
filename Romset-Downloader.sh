@@ -1,5 +1,6 @@
 #!/bin/bash
 ################ config ################ 
+set -euo pipefail
 CONFIGURE(){
 ROMSDIR=~/RetroPie/roms
 echo "= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = ="
