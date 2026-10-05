@@ -1,10 +1,21 @@
 name: CI
 on:
   push:
-    branches: ["master","main","master"]
+    branches: ["master", "main"]
   pull_request:
-    branches: ["master","main","master"]
+    branches: ["master", "main"]
   workflow_dispatch:
 jobs:
-  ci:
-    uses: itsdarklikehell/ci-templates/.github/workflows/ci-generic.yml@v1
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install shellcheck
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq shellcheck
+
+      - name: Run shellcheck
+        run: shellcheck Romset-Downloader.sh test.sh
+
+      - name: Run tests
+        run: bash test.sh
