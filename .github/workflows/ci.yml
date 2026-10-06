@@ -8,3 +8,5 @@ on:
 jobs:
   ci:
     uses: itsdarklikehell/ci-templates/.github/workflows/ci-generic.yml@v1
+    with:
+      docker-build: false
